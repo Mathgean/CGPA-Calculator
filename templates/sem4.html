@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sem-4 GPA</title>
+    <link rel="stylesheet" href="../static/gpa.css">
+</head>
+<body>
+<h1 align = "center">Fill Your Grades to Get GPA</h1>
+<h3 align = "center">Regulation 2017 - CSE - 4th Semester</h3>
+<form action="" method="post" >
+    <label for="cgpa" id="l10">GPA:<br>
+        <input type="text" name="cgpa" value="{{data}}" readonly>
+    </label><br>
+    <label for="ip" id="l1">Probability and Queueing Theory(MA8402):<br>
+        <input type="radio" name = "ip" value="10" required>O<br>
+        <input type="radio" name = "ip" value="9">A+<br>
+        <input type="radio" name = "ip" value="8">A<br>
+        <input type="radio" name = "ip" value="7">B+<br>
+        <input type="radio" name = "ip" value="6">B<br>
+        <input type="radio" name = "ip" value="0">RA<br>
+    </label>
+    <label for="ai" id="l2">Computer Architecture(CS8491):<br>
+        <input type="radio" name = "ai" value="10" required>O<br>
+        <input type="radio" name = "ai" value="9">A+<br>
+        <input type="radio" name = "ai" value="8">A<br>
+        <input type="radio" name = "ai" value="7">B+<br>
+        <input type="radio" name = "ai" value="6">B<br>
+        <input type="radio" name = "ai" value="0">RA<br>
+    </label>
+    <label for="mc" id="l3">Database Management Systems(CS8492):<br>
+        <input type="radio" name = "mc" value="10" required>O<br>
+        <input type="radio" name = "mc" value="9">A+<br>
+        <input type="radio" name = "mc" value="8">A<br>
+        <input type="radio" name = "mc" value="7">B+<br>
+        <input type="radio" name = "mc" value="6">B<br>
+        <input type="radio" name = "mc" value="0">RA<br>
+    </label>
+    <label for="cd" id="l4">Design and Analysis of Algorithms(CS8451):<br>
+        <input type="radio" name = "cd" value="10" required>O<br>
+        <input type="radio" name = "cd" value="9">A+<br>
+        <input type="radio" name = "cd" value="8">A<br>
+        <input type="radio" name = "cd" value="7">B+<br>
+        <input type="radio" name = "cd" value="6">B<br>
+        <input type="radio" name = "cd" value="0">RA<br>
+    </label>
+    <label for="ds" id="l5">Operating Systems(CS8493):<br>
+        <input type="radio" name = "ds" value="10" required>O<br>
+        <input type="radio" name = "ds" value="9">A+<br>
+        <input type="radio" name = "ds" value="8">A<br>
+        <input type="radio" name = "ds" value="7">B+<br>
+        <input type="radio" name = "ds" value="6">B<br>
+        <input type="radio" name = "ds" value="0">RA<br>
+    </label>
+    <label for="ipl" id="l6">Software Engineering(CS8494):<br>
+        <input type="radio" name = "ipl" value="10" required>O<br>
+        <input type="radio" name = "ipl" value="9">A+<br>
+        <input type="radio" name = "ipl" value="8">A<br>
+        <input type="radio" name = "ipl" value="7">B+<br>
+        <input type="radio" name = "ipl" value="6">B<br>
+        <input type="radio" name = "ipl" value="0">RA<br>
+    </label>
+    <label for="mad" id="l7">Database Management Systems Laboratory(CS8481):<br>
+        <input type="radio" name = "mad" value="10" required>O<br>
+        <input type="radio" name = "mad" value="9">A+<br>
+        <input type="radio" name = "mad" value="8">A<br>
+        <input type="radio" name = "mad" value="7">B+<br>
+        <input type="radio" name = "mad" value="6">B<br>
+        <input type="radio" name = "mad" value="0">RA<br>
+    </label>
+    <label for="mini" id="k8">Operating Systems Laboratory(CS8461):<br>
+        <input type="radio" name = "mini" value="10" required>O<br>
+        <input type="radio" name = "mini" value="9">A+<br>
+        <input type="radio" name = "mini" value="8">A<br>
+        <input type="radio" name = "mini" value="7">B+<br>
+        <input type="radio" name = "mini" value="6">B<br>
+        <input type="radio" name = "mini" value="0">RA<br>
+    </label>
+    <label for="nm" id="l9">Advanced Reading and Writing(HS8461):<br>
+        <input type="radio" name = "nm" value="10" required>O<br>
+        <input type="radio" name = "nm" value="9">A+<br>
+        <input type="radio" name = "nm" value="8">A<br>
+        <input type="radio" name = "nm" value="7">B+<br>
+        <input type="radio" name = "nm" value="6">B<br>
+        <input type="radio" name = "nm" value="0">RA<br>
+    </label>
+    <div id ="d1">
+        <input type="submit" value="Calculate" onsubmit="return alert('Successfully Calculated!')">
+        <input type="reset" value="Clear" onclick= 'return confirm("Are you Sure?")'>
+    </div>
+</form>
+</body>
+</html>

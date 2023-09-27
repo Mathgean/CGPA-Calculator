@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sem-8 GPA</title>
+    <link rel="stylesheet" href="../static/gpa.css">
+</head>
+<body>
+<h1 align = "center">Fill Your Grades to Get GPA</h1>
+<h3 align = "center">Regulation 2017 - CSE - 8th Semester</h3>
+<form action="" method="post" >
+    <label for="cgpa" id="l10">GPA:<br>
+        <input type="text" name="cgpa" value="{{data}}" readonly>
+    </label><br>
+    <label for="ip" id="l1" >Professional Elective IV():<br>
+        <input type="radio" name = "ip" value="10" required>O<br>
+        <input type="radio" name = "ip" value="9">A+<br>
+        <input type="radio" name = "ip" value="8">A<br>
+        <input type="radio" name = "ip" value="7">B+<br>
+        <input type="radio" name = "ip" value="6">B<br>
+        <input type="radio" name = "ip" value="0">RA<br>
+    </label>
+    <label for="ai" id="l2">Project Work(CS8811):<br>
+        <input type="radio" name = "ai" value="10" required>O<br>
+        <input type="radio" name = "ai" value="9">A+<br>
+        <input type="radio" name = "ai" value="8">A<br>
+        <input type="radio" name = "ai" value="7">B+<br>
+        <input type="radio" name = "ai" value="6">B<br>
+        <input type="radio" name = "ai" value="0">RA<br>
+    </label>
+
+    <label for="nm" id="l3">Naan Mudhalvan(SB0000):<br>
+        <input type="radio" name = "nm" value="10" required>O<br>
+        <input type="radio" name = "nm" value="9">A+<br>
+        <input type="radio" name = "nm" value="8">A<br>
+        <input type="radio" name = "nm" value="7">B+<br>
+        <input type="radio" name = "nm" value="6">B<br>
+        <input type="radio" name = "nm" value="0">RA<br>
+    </label>
+    <div id ="d1">
+        <input type="submit" value="Calculate" onsubmit="return alert('Successfully Calculated!')">
+        <input type="reset" value="Clear" onclick= 'return confirm("Are you Sure?")'>
+    </div>
+</form></body>
+</html>

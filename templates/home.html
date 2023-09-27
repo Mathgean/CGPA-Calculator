@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../static/home.css">
+<title>Homepage</title>
+</head>
+<body>
+  <div class="header">
+    <h1>Anna University CGPA Calculator Regulation 2017</h1>
+    <h3>Explore the Links Below</h3>
+  </div>
+  <button class="button" onsubmit= "about.html">About us</button>
+  <a href='{{ url_for("sem1") }}'>SEM-1 GPA</a><br>
+  <a href='{{ url_for("sem2") }}'>SEM-2 GPA</a><br>
+  <a href='{{ url_for("sem3") }}'>SEM-3 GPA</a><br>
+  <a href='{{ url_for("sem4") }}'>SEM-4 GPA</a><br>
+  <a href='{{ url_for("sem5") }}'>SEM-5 GPA</a><br>
+  <a href='{{ url_for("sem6") }}'>SEM-6 GPA</a><br>
+  <a href='{{ url_for("sem7") }}'>SEM-7 GPA</a><br>
+  <a href='{{ url_for("sem8") }}'>SEM-8 GPA</a><br>
+  <a href='{{ url_for("cgpa") }}'>OVERALL CGPA</a>
+</body>
+</html>

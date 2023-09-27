@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sem-2 GPA</title>
+    <link rel="stylesheet" href="../static/gpa.css">
+</head>
+<body>
+<h1 align = "center">Fill Your Grades to Get GPA</h1>
+<h3 align = "center">Regulation 2017 - CSE - 2nd Semester</h3>
+<form action="" method="post" >
+    <label for="cgpa" id="l10">GPA:<br>
+        <input type="text" name="cgpa" value="{{data}}" readonly>
+    </label><br>
+    <label for="ip" id="l1" >Technical English(HS8251):<br>
+        <input type="radio" name = "ip" value="10" required>O<br>
+        <input type="radio" name = "ip" value="9">A+<br>
+        <input type="radio" name = "ip" value="8">A<br>
+        <input type="radio" name = "ip" value="7">B+<br>
+        <input type="radio" name = "ip" value="6">B<br>
+        <input type="radio" name = "ip" value="0">RA<br>
+    </label>
+    <label for="ai" id="l2">Engineering Mathematics-II(MA8251):<br>
+        <input type="radio" name = "ai" value="10" required>O<br>
+        <input type="radio" name = "ai" value="9">A+<br>
+        <input type="radio" name = "ai" value="8">A<br>
+        <input type="radio" name = "ai" value="7">B+<br>
+        <input type="radio" name = "ai" value="6">B<br>
+        <input type="radio" name = "ai" value="0">RA<br>
+    </label>
+    <label for="mc" id="l3">Physics for Information Science(PH8252):<br>
+        <input type="radio" name = "mc" value="10" required>O<br>
+        <input type="radio" name = "mc" value="9">A+<br>
+        <input type="radio" name = "mc" value="8">A<br>
+        <input type="radio" name = "mc" value="7">B+<br>
+        <input type="radio" name = "mc" value="6">B<br>
+        <input type="radio" name = "mc" value="0">RA<br>
+    </label>
+    <label for="cd" id="l4">Basic Electrical, Electronics and Engineering(BE8255):<br>
+        <input type="radio" name = "cd" value="10" required>O<br>
+        <input type="radio" name = "cd" value="9">A+<br>
+        <input type="radio" name = "cd" value="8">A<br>
+        <input type="radio" name = "cd" value="7">B+<br>
+        <input type="radio" name = "cd" value="6">B<br>
+        <input type="radio" name = "cd" value="0">RA<br>
+    </label>
+    <label for="ds" id="l5">Environmental Science and Engineering(GE8291):<br>
+        <input type="radio" name = "ds" value="10" required>O<br>
+        <input type="radio" name = "ds" value="9">A+<br>
+        <input type="radio" name = "ds" value="8">A<br>
+        <input type="radio" name = "ds" value="7">B+<br>
+        <input type="radio" name = "ds" value="6">B<br>
+        <input type="radio" name = "ds" value="0">RA<br>
+    </label>
+    <label for="ipl" id="l6">Programming in C(CS8251):<br>
+        <input type="radio" name = "ipl" value="10" required>O<br>
+        <input type="radio" name = "ipl" value="9">A+<br>
+        <input type="radio" name = "ipl" value="8">A<br>
+        <input type="radio" name = "ipl" value="7">B+<br>
+        <input type="radio" name = "ipl" value="6">B<br>
+        <input type="radio" name = "ipl" value="0">RA<br>
+    </label>
+    <label for="mad" id="l7">Python Engineering Practices Laboratory(GE8261):<br>
+        <input type="radio" name = "mad" value="10" required>O<br>
+        <input type="radio" name = "mad" value="9">A+<br>
+        <input type="radio" name = "mad" value="8">A<br>
+        <input type="radio" name = "mad" value="7">B+<br>
+        <input type="radio" name = "mad" value="6">B<br>
+        <input type="radio" name = "mad" value="0">RA<br>
+    </label>
+    <label for="mini" id="k8">C Programming Laboratory(CS8261):<br>
+        <input type="radio" name = "mini" value="10" required>O<br>
+        <input type="radio" name = "mini" value="9">A+<br>
+        <input type="radio" name = "mini" value="8">A<br>
+        <input type="radio" name = "mini" value="7">B+<br>
+        <input type="radio" name = "mini" value="6">B<br>
+        <input type="radio" name = "mini" value="0">RA<br>
+    </label>
+    <div id ="d1">
+        <input type="submit" value="Calculate" onsubmit="return alert('Successfully Calculated!')">
+        <input type="reset" value="Clear" onclick= 'return confirm("Are you Sure?")'>
+    </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Overall CGPA</title>
+<link rel="stylesheet" href="../static/Cgpa.css">
+<script>
+function generateGPAInputs() {
+    var selectedSemester = parseInt(document.getElementById("semesterSelect").value);
+    var gpaInputsContainer = document.getElementById("gpaInputsContainer");
+    gpaInputsContainer.innerHTML = ""; // Clear previous inputs
+
+    for (var i = 1; i <= selectedSemester; i++) {
+        var label = document.createElement("label");
+        label.textContent = "GPA OF SEMESTER " + i + "*";
+
+        var input = document.createElement("input");
+        input.type = "text";
+        input.name = "sem" + i; // Set the name attribute as sem1, sem2, etc.
+
+        var lineBreak = document.createElement("br");
+
+        gpaInputsContainer.appendChild(label);
+        gpaInputsContainer.appendChild(input);
+        gpaInputsContainer.appendChild(lineBreak);
+    }
+}
+</script>
+</head>
+<body>
+<h1>Overall CGPA Calculator</h1>
+<form method = 'post'>
+    <label >Your CGPA is <input type="text" name='cgpa' value="{{data}}" readonly></label>
+    <label for="semesterSelect">SELECT SEMESTER</label>
+    <select id="semesterSelect" name = 'op' onchange="generateGPAInputs()">
+        <option value="0">CHOOSE</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+    </select>
+
+    <div id="gpaInputsContainer">
+        <!-- GPA input fields will be dynamically generated here -->
+    </div>
+
+    <input type="submit" value="Calculate GPA">
+</form>
+</body>
+</html>
