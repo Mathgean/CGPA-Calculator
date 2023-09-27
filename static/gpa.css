@@ -1,0 +1,89 @@
+  body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #007bff;
+}
+
+h3 {
+  color: #555;
+}
+
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#d1 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #0056b3;
+}
+
+input[type="submit"]:focus,
+input[type="reset"]:focus {
+  outline: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  form {
+    padding: 10px;
+  }
+  #d1 {
+    flex-direction: column;
+  }
+  input[type="submit"],
+  input[type="reset"] {
+    margin-top: 10px;
+  }
+}
+
+/* Optional: Add a hover effect on labels for better user experience */
+label:hover {
+  background-color: #f0f0f0;
+}
