@@ -115,9 +115,8 @@ def sem5():
         mad = int(request.form['mad'])
         mini = int(request.form['mini'])
         net = int(request.form['net'])
-        nm = int(request.form['nm'])
-        marks = [ip, ai, mc, cd, ds, ipl, mad, mini, net, nm]
-        credit = [4, 3, 3, 3, 3, 3, 2, 2, 2, 2]
+        marks = [ip, ai, mc, cd, ds, ipl, mad, mini, net]
+        credit = [4, 3, 3, 3, 3, 3, 2, 2, 2]
         gpa = clac(marks, credit)
         return render_template('sem5.html', data=gpa)
     return render_template('sem5.html')
@@ -134,10 +133,9 @@ def sem6():
         ipl = int(request.form['ipl'])
         mad = int(request.form['mad'])
         mini = int(request.form['mini'])
-        nm = int(request.form['nm'])
         pc = int(request.form['pc'])
-        marks = [ip, ai, mc, cd, ds, ipl, mad, mini, nm, pc]
-        credit = [3, 3, 3, 4, 3, 2, 2, 1, 2, 1]
+        marks = [ip, ai, mc, cd, ds, ipl, mad, mini, pc]
+        credit = [3, 3, 3, 4, 3, 2, 2, 1, 1]
         gpa = clac(marks, credit)
         return render_template('sem6.html', data=gpa)
     return render_template('sem6.html')
@@ -153,9 +151,8 @@ def sem7():
         ds = int(request.form['ds'])
         ipl = int(request.form['ipl'])
         mad = int(request.form['mad'])
-        nm = int(request.form['nm'])
-        marks = [ip, ai, mc, cd, ds, ipl, mad, nm]
-        credit = [3, 3, 3, 3, 3, 2, 2, 2]
+        marks = [ip, ai, mc, cd, ds, ipl, mad]
+        credit = [3, 3, 3, 3, 3, 2, 2]
         gpa = clac(marks, credit)
         return render_template('sem7.html', data=gpa)
     return render_template('sem7.html')
@@ -166,9 +163,8 @@ def sem8():
     if request.method == 'POST':
         ip = int(request.form['ip'])
         ai = int(request.form['ai'])
-        nm = int(request.form['nm'])
         marks = [ip, ai, nm]
-        credit = [3, 10, 2]
+        credit = [3, 10]
         gpa = clac(marks, credit)
         return render_template('sem8.html', data=gpa)
     return render_template('sem8.html')
