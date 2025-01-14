@@ -178,8 +178,8 @@ def cgpa():
             num = int(request.form['op'])
             for i in range(1, num + 1):
                 se = 'sem' + str(i)
-                result.append(int(request.form[se]))
-            suma = 0
+                result.append(float(request.form[se]))
+            suma = 0.0
             for i in result:
                 suma = suma + i
             a = suma / num
